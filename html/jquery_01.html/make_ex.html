@@ -1,0 +1,92 @@
+  <!-- 아래의 코드를 jquery를 이용하여 제작하시오. -->
+<!--   01. text()       : 작성한 내용을 확인/작성 하는 메소드
+  02. html()       : 선택자 내부의 html태그를 확인/제작 하는 메소드( 사용시 내용 지워짐
+  03. wrap()       : 선택한 요소의 부모요소를 제작 하는 메소드
+  04. before()     : 선택요소의 이전(형제)에 요소를 제작/삽입하는 메소드
+  05. after()      : 선택 요소의 이후(형제)에 요소를 제작/삽입하는 메소드
+  06. prepend()    : 선택요소의 자식의 앞에 요소를 제작/삽입하는 메소드 
+  06-1. prependTo()    주어 순서만 바뀜.
+  07. append()     : 선택요소의 자식의 뒤에 요소를 제작/삽입하는 메소드
+  07-1 appendTo()    주어 순서만 바뀜.
+  08. clone()      : 내용/태그 ... 복제하는 메소드
+  09. remove()     : 선택 요소를 삭제하는 메소드
+  10. empty()      : 선택요소의 내부를 비우는 메소드
+  11. removeAttr('속성명) : 선택요소의 속성을 삭제하는 메소드
+  12. attr('속성명'(,'속성값')       : 선택요소의 속성을 파악/수정/삽입 하는 메소드
+  13. val()        : form 요소의 값을 파악/삽입 하는 메소드 -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="../../index.html">index page 이동</a></h1>
+      <nav id="gnb">
+        <h2 class="hidden"><span>global navigation</span></h2>
+        <ul>
+          <li><a href="#">link_name_01</a></li>
+          <li><a href="#">link_name_02</a></li>
+          <li><a href="#">link_name_03</a></li>
+          <li><a href="#">link_name_04</a></li>
+          <li><a href="#">link_name_05</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // #headBox -->
+    <section id="viewBox">
+      <h2>viewBox</h2>
+      <div class="view_btn">
+        <ul class="view_indi_btn">
+          <li><a href="#link_01">narr_01</a></li>
+          <li><a href="#link_02">narr_02</a></li>
+          <li><a href="#link_03">narr_03</a></li>
+          <li><a href="#link_04">narr_04</a></li>
+        </ul>
+      </div>
+      <div class="view_slide_btn">
+        <button type="button">다음내용 보기</button>
+        <button type="button">이전내용 보기</button>
+      </div>
+      <div class="view_banner">
+        <div id="link_01">
+          <h3>광고내용제목_01</h3>
+          <p>광고설명_01</p>
+          <div class="view_link"><a href="http://link_01.com">자세히보기</a></div>
+        </div>
+        <div id="link_02">
+          <h3>광고내용제목_02</h3>
+          <p>광고설명_02</p>
+          <div class="view_link"><a href="http://link_02.com">자세히보기</a></div>
+        </div>
+        <div id="link_03">
+          <h3>광고내용제목_03</h3>
+          <p>광고설명_03</p>
+          <div class="view_link"><a href="http://link_03.com">자세히보기</a></div>
+        </div>
+        <div id="link_04">
+          <h3>광고내용제목_04</h3>
+          <p>광고설명_04</p>
+          <div class="view_link"><a href="http://link_04.com">자세히보기</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- // #viewBox -->
+    <article id="newsBox">
+      <h2>newsBox</h2>
+      <div class="news_outer">
+        <!-- 뉴스 총 12개 삽입 -->
+        <div class="news_01"></div>
+          <div class="img"><span>뉴스이미지1</span></div>
+          <dl class="news_content">
+            <dt>news_title</dt>
+            <dd>news_content</dd>
+          </dl>
+
+      </div>
+    </article>
+    <!-- // #newsBox -->
+    <article id="conBox">
+      <h2>conBox</h2>
+    </article>
+    <!-- // #conBox -->
+    <footer id="footBox">
+      <h2>company info</h2>
+    </footer>
+    <!-- // #footBox -->
+  </div>

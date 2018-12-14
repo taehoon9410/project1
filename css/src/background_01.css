@@ -1,0 +1,175 @@
+
+#wrap{width: 100% ;height: auto;min-height: 10rem;
+      background-color: #ddd;}
+ #headolBox{width: 100%; height: auto; } 
+ h1{padding: 1rem 0 ; width: 100%; height:auto;background-color: #a8f;
+    text-align: center;}
+#bgBox_01{margin-top: 2rem; padding: 0 1rem; width: 100%; height: auto;
+         min-height: 1rem; }
+  h2{border-bottom: 0.1rem solid #a8f ; margin: 1rem;}
+  h3{width: 100%; height: auto; padding: 0.5rem ;box-sizing: border-box;
+     background-color: #acf;}
+ .icon{margin: 1rem auto;width: 80%;height:30rem ;border: 1px solid #333;
+       border-radius: 1rem 0.5rem 0 0.2rem;
+      box-shadow: 0.5rem 0.5rem 0.5rem #acf,
+       -0.1rem -0.1rem 0.2rem #fac,
+       -0.2rem 1rem 0.2rem rgba(255,255,0,0.5);}                  
+    .icon_01{background-image: url("../../img/icon/cat.png");
+                background-repeat: no-repeat;background-position: center;
+                 /*transition: all 300ms linear;*/}
+                
+                .icon_01:hover{animation: exloding 1000ms infinite ease;}
+      @keyframes exloding{
+         0%{background-position:20% -100%;}
+         100%{background-position: 20% 200%;}
+       }
+      
+
+     /*background-position: x축,y축; - 기본은 0 0      -기본은 0 0    
+       x와 y축은 의미상의 용어로 사용 가능하다 (top,left,right,bottom)
+      이 때 , top 이나 left처럼 한쪽으로 위치를 잡고 다른 위치하나는 중심에 위치한다면,
+      ceter라는 용어는 생략해도 된다.
+      단,둘 모두 center라면 하나만 입력한다.
+      *:bacground- position의 기능에서 용어를 이용한 위치는 그리 권장하지 않습니다.
+      그래서 %의 수치나 정확한 수치를 입력하여 배치할것을 권장한다*/
+
+      .icon_02 {background-image: url("../../img/icon/icon_02.png");
+      background-repeat: no-repeat;background-position: 50% 50%;
+       background-size: 70% auto ;transition: all 300ms linear;}
+       /*내용이미지의 크기를 지정하는 기능
+          background-size: cover \ contain 가로크기 세로크기
+            cover - 꽉차게 
+            contain 모든이미지 다 보이게
+            가로크기 세로크기를 입력이 가능  , 둘중 하나는 입력하지 않으면 auto (비율유지)
+            단, 세로값을 입력하고 가로크기는 자동으로 변형되게 하려면 auto세로크기;
+            
+            ---
+            현재:background-size는 권고안으로 등록이 되지 않은 상태(prefix)
+            */
+       .icon_02:hover{background-size:  120% auto;}  
+
+
+
+
+    .icon_03{background-image: url(../../img/icon/icon_01.jpg);
+             background-repeat: no-repeat;background-position: center;
+             background-size: cover; background-color: #acf; }   
+      .icon_03>span{display: block; width: 0; height: 0; z-index: -1;
+                overflow: hidden;} 
+.icon_04{width: 3rem;height: 4rem;background-image: url("../../img/icon/mouse_icons.png");
+         background-repeat: no-repeat; 
+         background-position:-465px -450px;}
+
+/* .exam{width: 100%; height: 10rem ; background-color: #ddd;}
+ .exam ul{width: 100%;height: auto;}
+ .exam ul:after,.exam ul::after{content: ""; display: block;clear: both;
+                                 width: 100px; height: 120px; border-radius: 0.5rem;}
+ .exam>ul>li{margin: 1rem;float: left;border: 1px solid #333; width: 100%;height: 100%;}                                
+      .exam a{display: block;width: 100% ;height: 100%;
+              background-image: url("../../img/icon/icon_tool.png");background-repeat: no-repeat;}
+       .exam a>span{display: block;width: 0 ;height: 0;position: relative;z-index: -1;overflow: hidden;}
+          .exam>ul>li:nth-cild(1)>a{background-position: 0 -244px; }                                        
+          .exam>ul>li:nth-cild(1)>a:hover{background-position: -232px 0 ;}
+           .exam>ul>li:nth-cild(1)>a:active{background-position: 0 0 }
+*/
+
+ .bgArea{padding: 1rem;margin: 3rem auto;width: 80%; height: auto;
+          background-color:#cda; }
+    .bg_area{margin: 1rem auto;
+             width: 80%; height: 10rem;
+             padding: 2rem; border: 1rem dotted #64a;
+              background-color: #fff;
+              font-style: 2rem;
+              font-weight: bold;
+              text-shadow: 0.3rem 0.3rem 0.1rem #000;
+              background-image: url(../../img/bg/city_01.jpg);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover; transition: all 200ms linear;
+              background-color: #06a;} 
+    .bg_area:hover{background-size: 120%} 
+
+
+    /*area_01====================   */
+.area_01{background-clip: border-box;}
+.area_02{background-clip: padding-box;}
+.area_03{background-clip: content-box;} 
+
+/*===========================================*/
+
+    .bg_img{background-image: url(../../img/bg/city_01.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;transition:all 200ms linear;
+             border-color: #fa0;}
+      .bg_area:hover{background-size: 120%} 
+             /*img_01=========================  */
+    .img_02{background-origin:border-box; }
+    .img_03{background-origin:padding-box; }
+    .img_04{background-origin:content-box; }
+
+
+
+    /*배경색상을 정해진 요소에 채울경우 색상의 범위를 지정할 수 있다.
+       background-clip
+     *배경이미지의 정해진 요소의 크기만큼 채울경우 그범위를 지정 할 수 있다.
+       background-origin : boder-box | padding-box|content-box;
+
+     * boder-box 의 의미는 :외곽선의 영역까지;
+     *padding의 의미는 : padding의 영역까지;(border제외,content포함)
+     *content-box의 의미는:실제 border,padding이 아닌 내용의 영역을 의미; 
+    */
+
+#bgArea_02{margin-bottom: 50rem;  
+           width: 100%;height: auto;border:2px solid #fa0;}
+
+#bgArea_02>div{width: 100%;min-width: 60rem;height: 20rem;
+              background-repeat: no-repeat;background-position: 50%;
+               background-size: cover;}
+  #bgArea_02 > .fixed{background-image:  url(../../img/bg/city_01.jpg) ;
+                         background-attachment: fixed;}
+                                
+  #bgArea_02 > .scroll{background-image: url(../../img/bg/rex.jpg);
+                            background-attachment: scroll; }
+
+ /*브라우저 내에 이미지를 position:fixed; 처리한것처럼 배경이미지를 사용하게 만들 수있는 기능   */
+ /*bacground-attachment:fixed |scroll           */
+           
+#gradient{margin:auto;width: 80%; height: auto;}
+#gradient>div{padding: 1rem;box-sizing: border-box;
+          width: 100%;height: 25rem;border:1px solid #333; margin-bottom: 2rem;}
+  .linear_01{
+           background-color: #fa0;
+           background-image: linear-gradient(#fa0,#f0a);
+           background-image: url(../../img/bg/gr_01.car_02.jpg)
+           background-repeat: repeat-x;background-position: 0 0;
+           background-size: auto 100%;
+           background-image: linear-gradient(#fa0, #f0a);
+  }        
+
+.linear_02{background-image: linear-gradient(90deg #fa0 30%, #f0a 60%,#acf );}
+.linear_03{background-image: linear-gradient(135deg #fa0,#fff 30%,#f0f 30%, #f06);}
+.linear_03:hover{background-image: linear-gradient(100deg,#fa0,#fff 30%,#fa0 30%, #f06);}
+.linear_04{position: relative;background-image: linear-gradient(0deg, #acf, #fac); }
+.linear_04:hover{background-image: linear-gradient(0deg, #f06,#fac;);}
+.linear_04:before{content: ""; display:block;position:absolute; top:0; left: 0;
+           width: 100%; height: 100%; background-color: #ccc; transition: all 300ms linear;}
+  .linear_04:hover:before{opacity: 0;}
+  .radial_01{background-image:radial;}
+
+
+/*
+  background-image:url() ;
+  background-position: 0 0;
+  background-repeat:;
+
+  background-color: #fff;
+  background-clip: ; 
+  background-origin: ;
+  background-size: ; 
+  background-attachment: ;
+
+\background-image:linear-gradient(각도 , 색a 위치 ,색b 위치);      */
+
+
+             
